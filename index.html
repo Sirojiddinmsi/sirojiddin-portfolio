@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sirojiddin | Business Owner Portfolio</title>
+    <meta
+      name="description"
+      content="Premium multilingual personal portfolio for Sirojiddin: business, trade, technology, and long-term growth."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid"></div>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="#hero">SIROJIDDIN</a>
+        <nav class="nav-links">
+          <a data-i18n="nav.home" href="#hero">Bosh sahifa</a>
+          <a data-i18n="nav.about" href="#about">Men haqimda</a>
+          <a data-i18n="nav.experience" href="#timeline">Tajriba</a>
+          <a data-i18n="nav.projects" href="#projects">Loyihalar</a>
+          <a data-i18n="nav.contact" href="#contact">Aloqa</a>
+        </nav>
+        <div class="nav-controls">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            type="button"
+            aria-label="Toggle theme"
+            aria-pressed="false"
+          >
+            <span class="theme-track">
+              <span class="theme-thumb"></span>
+              <span class="theme-glow"></span>
+              <span class="theme-option theme-option-dark" data-i18n="theme.dark">Dark</span>
+              <span class="theme-option theme-option-light" data-i18n="theme.light">Light</span>
+            </span>
+          </button>
+          <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="uz">UZ</button>
+          <button class="lang-btn" data-lang="ru">RU</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container reveal" id="hero">
+        <div class="hero-main">
+          <span class="section-label" data-i18n="hero.badge">Biznes Egasi • Operator • Strateg</span>
+          <h1 data-i18n="hero.title">Aniqlik, ishonch va uzoq muddatli vizion bilan biznes quraman.</h1>
+          <p class="hero-text" data-i18n="hero.description">
+            Men moliya, ishlab chiqarish, texnik mahsulotlar va savdoni birlashtirgan tadbirkorman.
+          </p>
+          <div class="identity-line">
+            <span class="identity-name">Sirojiddin</span>
+            <span class="identity-role" data-i18n="hero.role">Business Owner</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects" data-i18n="hero.primary">Loyihalarni ko'rish</a>
+            <a class="btn btn-secondary" href="#contact" data-i18n="hero.secondary">Bog'lanish</a>
+          </div>
+          <div class="pillar-grid">
+            <article class="card small-card">
+              <h3 data-i18n="pillars.0.title">Savdo Operatori</h3>
+              <p data-i18n="pillars.0.description">Kundalik bozorda mijoz ishonchi va mahsulot aniqligiga tayangan amaliy tajriba.</p>
+            </article>
+            <article class="card small-card">
+              <h3 data-i18n="pillars.1.title">Texnik Bilim</h3>
+              <p data-i18n="pillars.1.description">Mashina, ehtiyot qism va xarid qarorlarini amaliy tushunish.</p>
+            </article>
+            <article class="card small-card">
+              <h3 data-i18n="pillars.2.title">O'sish Vizioni</h3>
+              <p data-i18n="pillars.2.description">Kengayadigan tizimlar va uzoq muddatli rivojlanishga fokus.</p>
+            </article>
+          </div>
+        </div>
+        <aside class="card hero-side reveal">
+          <div class="portrait-shell">
+            <div class="portrait-frame">
+              <div class="portrait-glow"></div>
+              <div class="portrait-placeholder">
+                <div class="portrait-ring"></div>
+              </div>
+            </div>
+          </div>
+          <div class="side-top">
+            <span data-i18n="hero.sideLabel">Shaxsiy Brend</span>
+            <span data-i18n="hero.sideValue">Premium</span>
+          </div>
+          <p class="side-title">From local trade to global systems.</p>
+          <div class="stats" id="stats"></div>
+        </aside>
+      </section>
+
+      <section class="container section reveal" id="about">
+        <div class="section-head">
+          <span class="section-label" data-i18n="about.label">Men haqimda</span>
+          <h2 data-i18n="about.title">Amaliy tajribani tizimli biznes fikrlashga aylantirgan yo'l.</h2>
+        </div>
+        <div class="card section-panel">
+          <p data-i18n="about.description"></p>
+          <div class="values" id="values"></div>
+          <div class="positioning">
+            <h3 data-i18n="about.positioningTitle">Pozitsiya</h3>
+            <p data-i18n="about.positioningDescription"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section reveal" id="skills">
+        <span class="section-label" data-i18n="skills.label">Kompetensiyalar</span>
+        <h2 data-i18n="skills.title">Biznesning raqamidan tortib texnik detallargacha.</h2>
+        <div class="grid cards-3" id="skills-grid"></div>
+      </section>
+
+      <section class="container section reveal" id="timeline">
+        <span class="section-label" data-i18n="timeline.label">Tajriba yo'li</span>
+        <h2 data-i18n="timeline.title">Turli sohalarda to'plangan qatlamli tajriba.</h2>
+        <div class="timeline-list" id="timeline-list"></div>
+      </section>
+
+      <section class="container section reveal" id="projects">
+        <span class="section-label" data-i18n="projects.label">Loyihalar</span>
+        <h2 data-i18n="projects.title">Bugungi faoliyat va ertangi kengayish nuqtalari.</h2>
+        <div class="grid cards-2" id="projects-grid"></div>
+      </section>
+
+      <section class="container section achievements reveal">
+        <div class="section-head">
+          <span class="section-label" data-i18n="achievements.label">Natijalar</span>
+          <h2 data-i18n="achievements.title">Ko'p yo'nalishli tajribadan shakllangan ishonch.</h2>
+        </div>
+        <div class="grid cards-2" id="achievements-grid"></div>
+      </section>
+
+      <section class="container section reveal">
+        <div class="card vision">
+          <span class="section-label" data-i18n="vision.label">Vizion</span>
+          <h2 data-i18n="vision.title">Mahalliy savdodan global tizimga.</h2>
+          <p data-i18n="vision.description"></p>
+        </div>
+      </section>
+
+      <section class="container section reveal" id="blog">
+        <div class="section-row">
+          <div>
+            <span class="section-label" data-i18n="blog.label">Fikrlar</span>
+            <h2 data-i18n="blog.title">Bozor, savdo va biznes haqidagi kuzatuvlar.</h2>
+          </div>
+        </div>
+        <div class="grid cards-3" id="blog-grid"></div>
+      </section>
+
+      <section class="container section reveal" id="contact">
+        <div class="card contact-shell">
+          <div>
+            <span class="section-label" data-i18n="contact.label">Aloqa</span>
+            <h2 data-i18n="contact.title">Qiymatli hamkorlik uchun suhbatni boshlaylik.</h2>
+            <p data-i18n="contact.description"></p>
+          </div>
+          <div class="contact-right">
+            <div class="contact-card">
+              <div class="contact-meta">Email</div>
+              <a href="mailto:hello@sirojiddin.uz">hello@sirojiddin.uz</a>
+            </div>
+            <div class="contact-card">
+              <div class="contact-meta" data-i18n="contact.phoneLabel">Telefon</div>
+              <a href="tel:+998990063363">+998 99 006 33 63</a>
+            </div>
+            <form class="contact-form" id="contact-form">
+              <input type="text" name="name" required />
+              <input type="email" name="email" required />
+              <input type="text" name="company" />
+              <textarea name="message" rows="5" required></textarea>
+              <button class="btn btn-primary" type="submit" data-i18n="contact.submit">Xabar yuborish</button>
+              <p class="form-status" id="form-status"></p>
+            </form>
+            <div class="contact-links">
+              <a class="btn btn-secondary" href="https://t.me/Sirojiddin_a99" data-i18n="contact.telegram">Telegram orqali yozish</a>
+              <a class="btn btn-secondary" href="https://wa.me/998990063363" data-i18n="contact.whatsapp">WhatsApp orqali yozish</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p data-i18n="footer.tagline">Intizom asosida qurilgan. Vizion bilan boshqariladi.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+  </html>
