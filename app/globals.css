@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: red;
+  color-scheme: dark;
 }
 
 html {
