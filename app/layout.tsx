@@ -9,7 +9,7 @@ const manrope = Manrope({
 });
 
 const sora = Sora({
-  subsets: ["latin"],
+  subsets: ["latin", "cyrillic"],
   variable: "--font-display"
 });
 

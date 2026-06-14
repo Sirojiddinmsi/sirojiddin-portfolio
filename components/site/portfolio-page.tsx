@@ -23,19 +23,6 @@ const languageNames: Record<Locale, string> = {
   en: "EN"
 };
 
-function TelegramIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      aria-hidden="true"
-      className={className}
-      fill="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path d="M21.7 3.3a1.8 1.8 0 0 0-1.86-.3L3.15 9.44c-1.2.46-1.18 1.15-.22 1.44l4.28 1.34 1.65 5.08c.2.56.1.79.68.79.45 0 .65-.2.9-.45l2.06-2 4.28 3.16c.79.44 1.36.21 1.56-.73l2.82-13.3c.3-1.16-.44-1.69-.46-1.47ZM8.05 11.91l9.66-6.1c.48-.29.92-.13.56.19l-7.97 7.2-.31 3.36-1.94-4.65Z" />
-    </svg>
-  );
-}
-
 export function PortfolioPage({
   locale,
   dict
@@ -103,30 +90,18 @@ export function PortfolioPage({
             ))}
           </nav>
 
-          <div className="flex items-center gap-2">
-            <a
-              href={siteConfig.telegram}
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Telegram"
-              title="Telegram"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line bg-white/[0.03] text-muted transition hover:border-[#229ED9]/50 hover:bg-[#229ED9]/10 hover:text-[#229ED9]"
-            >
-              <TelegramIcon className="h-5 w-5" />
-            </a>
-            <div className="flex items-center gap-2 rounded-full border border-line bg-white/[0.03] p-1">
-              {locales.map((item) => (
-                <Link
-                  key={item}
-                  href={`/${item}`}
-                  className={`rounded-full px-3 py-1.5 text-xs tracking-[0.2em] transition ${
-                    item === locale ? "bg-accent text-black" : "text-muted hover:text-white"
-                  }`}
-                >
-                  {languageNames[item]}
-                </Link>
-              ))}
-            </div>
+          <div className="flex items-center gap-2 rounded-full border border-line bg-white/[0.03] p-1">
+            {locales.map((item) => (
+              <Link
+                key={item}
+                href={`/${item}`}
+                className={`rounded-full px-3 py-1.5 text-xs tracking-[0.2em] transition ${
+                  item === locale ? "bg-accent text-black" : "text-muted hover:text-white"
+                }`}
+              >
+                {languageNames[item]}
+              </Link>
+            ))}
           </div>
         </div>
       </header>
